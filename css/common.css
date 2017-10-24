@@ -1,0 +1,135 @@
+
+*{margin:0;padding:0}
+body{
+    font-size:12px;
+    font-family:"Microsoft YaHei","微软雅黑";
+    width:100%;
+    height:100%;
+}
+html{width:100%;height:auto;font-family:"Microsoft YaHei","微软雅黑";}
+/*body{
+    font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYiMicro Hei",sans-serif;
+}*/
+ul,ol{list-style:none}
+img{border:0;outline-width: 0;}
+a{text-decoration: none;outline: none;color:#454545;}
+a:hover{
+    text-decoration: none;
+}
+a:active{
+    text-decoration: none;
+}
+i{font-style:normal}
+u{text-decoration:none}
+.img-responsive{display:block;max-width:100%;height:auto}
+.fl{float:left}
+.fr{float:right}
+.clearfix:before,.clearfix:after{
+    content:"";
+    height:0;
+    clear:both;
+    display: block;
+    visibility: hidden;
+}
+.clearfix{
+    zoom:1;
+}
+.clear{
+    clear: both;
+}
+input,textarea,select{
+    outline:none;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+}
+/*头部*/
+body{
+  background: #f2f2f2;
+}
+header{
+    background: #fff;
+}
+header .top{
+    height: 110px;
+    width:1200px;
+    margin:0 auto;
+   /* background: red;*/
+}
+header .nav ul li{
+    float:left;
+}
+header .nav ul li a{
+    font-size: 18px;
+    color: #000000;
+}
+header .top .top_img{
+    line-height: 110px;
+}
+header .top .top_img img{
+    vertical-align: middle;
+    margin-right: 87px;
+}
+header .nav{
+    line-height: 110px;
+    height:110px;
+}
+header .nav ul li{
+    margin-right: 50px;
+}
+header .login{
+    margin-top: 38px;
+}
+header .login a{
+    font-size: 14px;
+    color:#fff;
+    background: #fd7222;
+    padding:10px 20px;
+    display: inline-block;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}
+header .nav .active{
+    color:#1b91de
+}
+/*头部结束*/
+/*banner*/
+.banner{
+    font-size:0px;
+}
+.banner img{
+    width:100%;
+}
+/*版心*/
+.content{
+    width:1200px;
+    margin:0px auto;
+}
+/*面包屑导航*/
+.bread{
+    height: 50px;
+    line-height: 50px;
+    background: #fff;
+    margin-top:25px;
+    margin-bottom:20px;
+}
+.bread a:first-child{
+    margin-left: 20px;
+}
+.bread a{
+    font-size: 14px;
+    color:#555;
+}
+/*底部*/
+footer{
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #727272;
+    font-size: 14px;
+    color:#fff;
+}
+footer span:first-child{
+    margin-right:40px;
+}

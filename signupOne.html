@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <!-- <meta name="viewport" content="width=1200">-->
+    <meta name="viewport" content="width=device-width,maximum-scale=1.0,initial-scale=1.0,user-scalable=no">
+    <title>"创"在聊城-报名</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/signupOne.css">
+    <script src="js/jquery-1.8.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--[if lte IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+<header>
+    <div class="top clearfix">
+        <div class="top_img fl"><img src="images/logo.png" alt=""></div>
+        <div class="nav fl">
+            <ul>
+                <li><a href="index.html" class="active">首页</a></li>
+                <li><a href="itemShow.html">项目展示</a></li>
+                <li><a href="incubatorShow.html">孵化器展示</a></li>
+            </ul>
+        </div>
+        <div class="login fr">
+            <a href="login.html">登录</a>
+        </div>
+    </div>
+</header>
+<div class="banner">
+    <img src="images/banner1.jpg" alt="">
+</div>
+<div class="content">
+    <!--面包屑导航-->
+    <div class="bread">
+        <a href="index.html">首页</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="signupOne.html">创业大赛报名</a>
+    </div>
+    <div class="sign_wrap">
+        <p class="chuang_title">创业大赛报名</p>
+        <div class="sign_l">
+            <form action="">
+                <div class="advance clearfix">
+                    <span class="fl">参赛人员身份</span>
+                    <div class="identify">
+                        <p><span>大中专学生</span><input type="radio" name="iden"></p>
+                        <p><span>返乡人员</span><span><input type="radio" name="iden"></span></p>
+                        <p><span>失业人员</span><input type="radio" name="iden"></p>
+                        <p><span>其他城乡创业者</span><input type="radio" name="iden"></p>
+                    </div>
+
+                </div>
+                <div class="type clearfix"><span class="fl">参赛类别</span>
+                    <div class="chuang fl">
+                        <p><span>创业团队</span><input type="radio"></p><p><span>创业企业</span><input type="radio"></p>
+                    </div></div>
+                <div class="item_bref"><span>项目名称</span><input type="text"></div>
+                <div class="xiangxi"><span>项目简介</span><textarea name=""></textarea></div>
+                <div class="item_img"><span>项目图片</span>
+                    <a href="#"><input type="file" value="浏览" />上传图片</a>
+                </div>
+                <div class="item_address"><span>项目地址</span><input type="text"></div>
+                <div class="area"><span>所属领域</span><input type="text" placeholder="填写领域表id"></div>
+                <div class="address"><span>所在地区</span></div>
+                <div class="tel"><span>手机号码</span><input type="text"><span class="send_code">发送验证码</span></div>
+                <div class="code"><span>验证码</span><input type="text"></div>
+                <div class="contact"><span>联系人（姓名）</span><input type="text"></div>
+                <div class="button">
+                    <input type="button" value="提交">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p><span>@ahniznviamn249749079740版权所有&nbsp;&nbsp;&nbsp;&nbsp;京ICP备1234794719795</span><span>网站建设：星客</span></p>
+</footer>
+<script>
+    $.ajax({
+        type:"get",  //post
+        url:"接口地址",
+        data:{
+            username:"zhabg",
+            password:"123"
+        },
+        dataType:"json",
+        success:function(ret){
+            if(ret && ret.status =="000000"){
+                //DOM炒作
+                var html="";
+                for(var i=0;i<ret.list.length;i++){
+                    html+='<img src="'+ret.list[i].url+'"/>'
+                }
+                $("#listImg").append(html)
+            }else {
+                alert(ret.message)
+            }
+        },
+        error:function(ret){
+
+        }
+    })
+
+    /*
+    *
+    *
+    *
+    *
+    {
+        status:true;
+        message:"成功"
+        list:[
+        {
+            url:"http:wiwiawq"
+        },{
+     url:"http:wiwiawq"
+     },{
+     url:"http:wiwiawq"
+     },{
+     url:"http:wiwiawq"
+     },{
+     url:"http:wiwiawq"
+     }
+        ]
+    }
+    * */
+</script>
+</body>
+</html>

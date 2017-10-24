@@ -1,0 +1,98 @@
+.sign_wrap{
+    background: #fff;
+}
+.chuang_title{
+    font-size: 24px;
+    color:#000;
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: 44px;
+}
+form{
+    margin-left: 100px;
+    font-size: 16px;
+}
+.advance>span{
+    font-size:16px;
+}
+form input[type=text]{
+    width:437px;
+    border:1px solid #666;
+   /* background: red;*/
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    height: 30px;
+}
+form div>span:first-child{
+    display: inline-block;
+    width: 157px;
+}
+form textarea{
+    width: 437px;
+    height: 70px;
+    resize: none;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}
+.advance p{
+    display: inline-block;
+    margin-right: 30px;
+}
+.advance .identify{
+    width:344px;
+    float: left;
+}
+.advance .identify p{
+    margin-bottom: 10px;
+}
+.advance .identify p>span{
+    margin-right: 15px;
+}
+.advance .identify p:nth-child(3n){
+    margin-right: 44px;
+}
+.chuang p{
+    display: inline-block;
+}
+.chuang p span{
+    margin-right: 15px;
+}
+.chuang p:first-child{
+    margin-right: 49px;
+}
+form>div{
+    margin-bottom: 30px;
+}
+.xiangxi>span{
+    vertical-align: top;
+}
+.tel input[type=text],.code input[type=text],.contact input[type=text]{
+    width: 220px;
+}
+/*修改浏览按钮*/
+.item_img a{display:inline-block;color:#fff;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    font-size: 12px;
+    width:95px; height:34px; background:#1b91de; position:relative; overflow:hidden;text-align: center;line-height: 34px;}
+.item_img a:hover{background:#5cb8f3;}
+.item_img input{position:absolute;
+    right:0; top:0; font-size:100px; opacity:0; filter:alpha(opacity=0);}
+.button{
+    width:100px;
+    height: 35px;
+
+    line-height: 35px;
+    text-align: center;
+    background: #1b91de;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}
+.button input{
+    background: #1b91de;
+    border:none;
+}
